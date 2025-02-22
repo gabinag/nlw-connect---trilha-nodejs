@@ -2,10 +2,30 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-    "name": "Gabriela Nagamuta",
-    "email": "gnagamuta03@gmail.com"
+    "name": "Usuário indicado 3",
+    "email": "indicado3@gmail.com",
+    "referrer": "0ca99ff4-5e1a-48f2-8744-8d1350e46315"
 }
 
 ###
 
-GET http://localhost:3333/invites/gabi123
+GET http://localhost:3333/invites/7c0e7e59-62a4-479a-b27a-1c54a1e442ed
+
+###
+
+GET http://localhost:3333/subscribers/7c0e7e59-62a4-479a-b27a-1c54a1e442ed/ranking/clicks
+
+
+###
+
+GET http://localhost:3333/subscribers/7c0e7e59-62a4-479a-b27a-1c54a1e442ed/ranking/count
+
+
+###
+
+GET http://localhost:3333/subscribers/7c0e7e59-62a4-479a-b27a-1c54a1e442ed/ranking/position
+
+
+###
+
+GET http://localhost:3333/ranking
